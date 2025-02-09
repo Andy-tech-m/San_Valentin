@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ask her out</title>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            body {
+                margin: 0;
+                overflow: hidden;
+                background-color: black;
+                color: white;
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                position: relative;
+                text-align: center;
+                z-index: 2;
+            }
+            .btn a {
+                color: white;
+                background: rgb(209, 28, 137);
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                margin: 5px;
+                display: inline-block;
+            }
+            .btn .yes {
+                font-size: 1.5em;
+                padding: 15px 30px;
+            }
+            .btn .no {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+            .star {
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                background: white;
+                border-radius: 50%;
+                opacity: 0.6;
+                transition: transform 0.2s ease, opacity 0.2s ease;
+            }
+            .star:hover {
+                transform: scale(1.8);
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="tenor-gif-embed" data-postid="22893173" data-share-method="host" data-aspect-ratio="1.28514" data-width="100%"><a href="https://tenor.com/view/berkeye%C3%B6zel-berke%C3%B6zel-gif-22893173">Berkeyeözel Berkeözel GIF</a>from <a href="https://tenor.com/search/berkeye%C3%B6zel-gifs">Berkeyeözel GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <h1>"Porque dices que no!!!!"</h1>
+            <p>Ya no vuelvas a poner no amorcito 🥺</p>
+            <div class="btn">
+                <a href="yes.html" class="yes">Yes</a>
+                <a href="no2.html" class="no">No</a>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const numStars = 250;
+                for (let i = 0; i < numStars; i++) {
+                    let star = document.createElement("div");
+                    star.className = "star";
+                    document.body.appendChild(star);
+                    star.style.left = Math.random() * window.innerWidth + "px";
+                    star.style.top = Math.random() * window.innerHeight + "px";
+                }
+            });
+        </script>
+    </body>
+</html>

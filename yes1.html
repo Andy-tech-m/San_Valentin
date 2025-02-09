@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Ask her out</title>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            body {
+                background-color: #0a0a2a;
+                color: white;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                overflow: hidden;
+                position: relative;
+            }
+            .container {
+                position: relative;
+                z-index: 2;
+                padding-top: 50px;
+            }
+            .moon {
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                background: radial-gradient(circle at 40% 40%, #fff, #cccccc 60%, transparent 80%);
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+                transition: box-shadow 0.3s ease-in-out;
+            }
+            .moon:hover {
+                box-shadow: 0 0 20px rgba(255, 255, 0, 1);
+            }
+            .btn a {
+                display: inline-block;
+                margin: 10px;
+                padding: 10px 20px;
+                text-decoration: none;
+                background: #ff4d6d;
+                color: white;
+                border-radius: 10px;
+                transition: background 0.3s;
+            }
+            .btn a:hover {
+                background: #ff1e4d;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="tenor-gif-embed" data-postid="13879784" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/miss-you-love-sad-cat-gif-13879784">Miss You Love GIF</a>from <a href="https://tenor.com/search/miss+you-gifs">Miss You GIFs</a></div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            
+            <h1>DEBERITAS DEBERITAS MI NIÑA HERMOSA PRECIOSA</h1>
+            <p>Te digo que no te arrepentirás de nada y la pasarás super bien, mi amorcito hermosa❤️</p>
+            
+            <div class="btn">
+                <a href="yes2.html">Yes</a>
+            </div>
+        </div>
+        
+        <script>
+            function createMoon() {
+                const moon = document.createElement('div');
+                moon.classList.add('moon');
+                document.body.appendChild(moon);
+                moon.style.top = Math.random() * window.innerHeight + 'px';
+                moon.style.left = Math.random() * window.innerWidth + 'px';
+            }
+            for (let i = 0; i < 50; i++) {
+                createMoon();
+            }
+        </script>
+    </body>
+</html>

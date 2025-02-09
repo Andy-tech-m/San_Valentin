@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Ask her out</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+
+    <div class="container">
+        <div class="tenor-gif-embed" 
+             data-postid="22885016" 
+             data-share-method="host" 
+             data-aspect-ratio="1.04918" 
+             data-width="100%">
+            <a href="https://tenor.com/view/manja-gif-22885016">Manja Sticker</a>
+        </div>
+        <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+        <h1>MI NIÑA HERMOSA 🥺❤️ ¿QUIERES SER MI SAN VALENTÍN?</h1>
+        <p>Vamos mi amorcito dime que siii</p>
+
+        <div class="btn">
+            <a href="yes.html">Yes</a>
+            <a href="no1.html">No</a>
+        </div>
+    </div>
+
+    <script>
+        const starContainer = document.querySelector('.stars');
+        
+        // Crear estrellas interactivas
+        for (let i = 0; i < 2300; i++) {
+            let star = document.createElement('div');
+            star.classList.add('star');
+            star.innerText = '✦';  // Usar símbolo de estrella
+            star.style.top = Math.random() * 100 + 'vh';
+            star.style.left = Math.random() * 100 + 'vw';
+            starContainer.appendChild(star);
+        }
+        
+        // Añadir interactividad al movimiento del mouse
+        document.addEventListener('mousemove', (event) => {
+            document.querySelectorAll('.star').forEach(star => {
+                const rect = star.getBoundingClientRect();
+                const distance = Math.sqrt(
+                    Math.pow(event.clientX - (rect.left + rect.width / 2), 2) +
+                    Math.pow(event.clientY - (rect.top + rect.height / 2), 2)
+                );
+                
+                if (distance < 50) {
+                    star.style.transform = 'scale(2)';
+                    star.style.textShadow = '0 0 15px white';
+                } else {
+                    star.style.transform = 'scale(1)';
+                    star.style.textShadow = '0 0 5px white';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

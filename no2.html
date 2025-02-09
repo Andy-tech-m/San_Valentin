@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ask her out</title>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            body {
+                margin: 0;
+                overflow: hidden;
+                background-color: black;
+                color: white;
+                font-family: Arial, sans-serif;
+            }
+            .container {
+                position: relative;
+                text-align: center;
+                z-index: 2;
+            }
+            .btn a {
+                color: white;
+                background: rgb(237, 27, 216);
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                margin: 5px;
+                display: inline-block;
+                font-size: 16px;
+            }
+            .btn a.yes {
+                font-size: 30px;
+                padding: 15px 30px;
+                background: rgb(194, 22, 157);
+            }
+            .star {
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                background: white;
+                border-radius: 50%;
+                opacity: 0.6;
+                transition: transform 0.2s ease, opacity 0.2s ease;
+            }
+            .star:hover {
+                transform: scale(1.8);
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="tenor-gif-embed" data-postid="24696854" data-share-method="host" data-aspect-ratio="1" data-width="100%">
+                <a href="https://tenor.com/view/sad-cat-sorry-cat-im-sorry-cat-cat-kitty-gif-24696854">Sad Cat Sorry Cat GIF</a>from 
+                <a href="https://tenor.com/search/sad+cat-gifs">Sad Cat GIFs</a>
+            </div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+            <h1>"¡Vamos, piénsalo bien! 🥺"</h1>
+            <p>Estas segura de que no, porque lo haces</p>
+            <div class="btn">
+                <a href="yes.html" class="yes">Yes</a>
+                <a href="no3.html">No</a>
+            </div>
+        </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const numStars = 250;
+                for (let i = 0; i < numStars; i++) {
+                    let star = document.createElement("div");
+                    star.className = "star";
+                    document.body.appendChild(star);
+                    star.style.left = Math.random() * window.innerWidth + "px";
+                    star.style.top = Math.random() * window.innerHeight + "px";
+                }
+            });
+        </script>
+    </body>
+</html>

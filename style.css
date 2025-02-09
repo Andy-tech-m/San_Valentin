@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Estilos del body */
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #0b3d91, #000);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: white;
+    z-index: 1;
+}
+
+/* Estrellas interactivas */
+.stars {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.star {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    color: white;
+    font-size: 12px;
+    text-shadow: 0 0 5px white;
+    transition: transform 0.2s, text-shadow 0.2s;
+}
+
+/* Estilo del GIF */
+.container .tenor-gif-embed {
+    max-width: 100%;
+    width: 100px;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .container .tenor-gif-embed {
+        width: 400px;
+    }
+}
+
+.tenor-gif-embed iframe {
+    pointer-events: none;
+}
+
+/* Botones */
+.container .btn {
+    display: flex;
+    gap: 25px;
+}
+
+.btn a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff4081;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #ff79a5;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn a:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(255, 64, 129, 0.8);
+}
